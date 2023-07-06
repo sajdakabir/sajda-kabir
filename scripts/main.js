@@ -23,19 +23,11 @@ app.addEventListener("click", function(event){
 async function open_terminal(){
   createText("Welcome");
   await delay(700);
-  createText("Starting the server...");
-  await delay(700);
   createBoldText("Sajda Kabir's Website");
   await delay(700);
-  // createText("You can run several commands:");
   createText("Type cd for a list of commands");
   createText("Type clear to clear terminal");
  
-  // createCode("Type"," cd for a list of commands");
-  // createCode("about me", "Who am i and what do i do.");
-  // createCode("all", "See all commands.");
-  // createCode("social -a", "All my social networks.");
-
   await delay(500);
   new_line();
 }
@@ -79,7 +71,7 @@ async function getInputValue(){
     createCode("about", "Who am i and what do i do.");
     createCode("projects", "My github page with my projects. Follow me there :)");
     createCode("social -a", "All my social networks.");
-    createCode("Other commands:", "email github dream inspiration linkedin twitter");
+    createCode("Other commands:", "email github inspiration linkedin twitter");
     createCode("clear", "Clean the terminal.");
     
   }
@@ -92,11 +84,6 @@ async function getInputValue(){
     createText("Hi👋, my name is Sajda Kabir!")
     createText("I am a Backend Developer. I create, find, and fix bugs.")
     createText("I've met some pretty cool people through the internet, so if you're here, reach out on any of the social media listed!")
-    // createText(". Utilizando principalmente a stack <span class='blue'>Node, React e React Native </span>por permitir criar aplicações de forma descomplicada e produtiva.")
-  }
-  else if(value === "dream" || value === "cd dream"){
-    trueValue(value);
-    createText("My dream is to make myself irreplaceable and ascend to the role of CTO!")
   }
   else if(value === "inspiration" || value === "cd inspiration"){
     trueValue(value);
